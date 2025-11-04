@@ -11,7 +11,7 @@ export default function App() {
           color: "#fff",
           minHeight: "80vh",
           textAlign: "left",
-          padding: "60px 0", // spazio sopra e sotto
+          padding: "60px 0",
         }}
       >
         <div className="container">
