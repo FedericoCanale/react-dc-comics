@@ -26,3 +26,12 @@ body {
   border-bottom-color: var(--dc-blue);
   cursor: pointer;
 }
+
+.blue-bar {
+  background-color: #0282F9;
+}
+
+.blue-bar img {
+  height: 50px;
+  object-fit: contain;
+}
