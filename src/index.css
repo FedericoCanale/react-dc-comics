@@ -35,3 +35,7 @@ body {
   height: 50px;
   object-fit: contain;
 }
+
+.footer-links a:hover {
+  color: #fff !important;
+}

@@ -1,6 +1,7 @@
 import Header from "./components/Header.jsx";
 import Main from "./components/Main.jsx";
 import BlueBar from "./components/BlueBar.jsx";
+import FooterLinks from "./components/FooterLinks.jsx";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Main />
       <BlueBar />
+      <FooterLinks />
     </>
   );
 }
