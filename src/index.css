@@ -1,1 +1,28 @@
-@import url("bootstrap")
+@import url("bootstrap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --dc-blue: #0282F9;
+}
+
+/* margine generale per tutta la pagina */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* link del menu */
+.nav-link {
+  padding: 1.5rem 0;
+  border-bottom: 4px solid transparent;
+  color: #1b1b1b;
+  transition: all 0.2s ease;
+}
+
+/* hover blu + underline */
+.nav-link:hover {
+  color: var(--dc-blue);
+  border-bottom-color: var(--dc-blue);
+  cursor: pointer;
+}
