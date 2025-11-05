@@ -174,3 +174,44 @@ body {
 .footer-links .row {
   row-gap: .5rem;
 }
+
+.footer-bar {
+  background-color: #303030;
+  color: #fff;
+}
+
+/* bottone */
+.footer-bar .btn-outline-primary {
+  color: #fff;
+  border-color: var(--dc-blue);
+}
+
+.footer-bar .btn-outline-primary:hover {
+  background-color: var(--dc-blue);
+  border-color: var(--dc-blue);
+  color: #fff;
+}
+
+/* label "Follow Us" in blu DC */
+.follow-us-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--dc-blue);
+  margin: 0;
+}
+
+/* icone social */
+.social-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: grayscale(100%);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.2) saturate(1.4) drop-shadow(0 0 6px var(--dc-blue));
+  cursor: pointer;
+}

@@ -7,16 +7,15 @@ import periscope from "../assets/img/footer-periscope.png";
 export default function Footer() {
     return (
         <footer className="footer-bar py-4">
-            <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-                {/* --- Bottone Sign-Up --- */}
+            <div className="container-fluid px-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                {/* Bottone signup */}
                 <button className="btn btn-outline-primary text-uppercase fw-bold px-4 mb-3 mb-md-0">
                     Sign-Up Now!
                 </button>
 
-                {/* --- Social Icons --- */}
+                {/* Follow us + icone */}
                 <div className="d-flex align-items-center gap-3">
-                    <h5 className="text-uppercase mb-0 me-2 fw-bold fs-6"
-                        style={{ color: "#0282F9" }}>Follow Us</h5>
+                    <h5 className="follow-us-label">Follow Us</h5>
 
                     <a href="#"><img src={fb} alt="Facebook" className="social-icon" /></a>
                     <a href="#"><img src={tw} alt="Twitter" className="social-icon" /></a>
