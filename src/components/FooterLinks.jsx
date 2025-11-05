@@ -4,7 +4,7 @@ import logoBg from "../assets/img/dc-logo-bg.png";
 export default function FooterLinks() {
   return (
     <section
-      className="footer-links text-white py-5 position-relative"
+      className="footer-links text-white py-5 px-5 position-relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -16,7 +16,7 @@ export default function FooterLinks() {
         <div
           className="d-flex flex-wrap text-start"
           style={{
-            gap: "20px", // spazio minimo tra le colonne
+            gap: "20px",
             maxWidth: "700px",
           }}
         >
