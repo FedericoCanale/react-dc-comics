@@ -72,3 +72,56 @@ body {
   border-color: #0282F9;
   color: #fff;
 }
+
+.footer-links {
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+  background-image: url("./assets/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.footer-links .col-12 {
+  margin-bottom: 20px;
+}
+
+
+.footer-col-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+
+.footer-links li {
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+
+.footer-links .footer-bg-logo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 550px;
+  opacity: 0.25;
+  transform: translate(40%, -50%);
+  pointer-events: none;
+}
