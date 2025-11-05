@@ -154,88 +154,36 @@ const comics = [
 ];
 
 
-import jumbotron from "../assets/img/jumbotron.jpg";
+
 
 export default function Main() {
     return (
-        <main style={{ backgroundColor: "#1C1C1C", color: "#fff" }}>
-            {/* --- JUMBOTRON --- */}
-            <section
-                style={{
-                    backgroundImage: `url(${jumbotron})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "top center",
-                    height: "400px",
-                }}
-            />
-            {/* --- BOX CURRENT SERIES (sovrapposto al jumbotron) --- */}
-            <div
-                style={{
-                    position: "absolute",
-                    top: "480px", // 🔹 sale sopra la griglia, quasi attaccato al jumbotron
-                    left: "15%",
-                    transform: "translateX(-50%)",
-                    backgroundColor: "#0282F9",
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    fontWeight: "bold",
-                    padding: "10px 25px",
-                    fontSize: "1.2rem",
-                    zIndex: 2,
-                }}
-            >
-                Current Series
-            </div>
-            {/* --- SEZIONE COMICS --- */}
-            <div className="container py-5" style={{ maxWidth: "1200px" }}>
+        <main className="main-wrap">
+            {/* Jumbotron */}
+            <section className="jumbotron" />
 
-                {/* --- Griglia --- */}
+            {/* Badge CURRENT SERIES sovrapposto */}
+            <div className="current-series-badge">Current Series</div>
+
+            {/* Griglia comics */}
+            <section className="container comics-wrap">
                 <div className="row g-4">
                     {comics.map((comic) => (
                         <div className="col-6 col-md-4 col-lg-2" key={comic.id}>
-
-                            <div
-                                className="overflow-hidden"
-                                style={{
-                                    aspectRatio: "1 / 1",
-                                    backgroundColor: "#000",
-                                    borderRadius: 0,
-                                }}
-                            >
-                                <img
-                                    src={comic.thumb}
-                                    alt={comic.title}
-                                    loading="lazy"
-                                    className="w-100 h-100"
-                                    style={{
-                                        objectFit: "cover",
-                                        objectPosition: "top",
-                                        display: "block",
-                                    }}
-                                />
+                            <div className="comic-thumb">
+                                <img src={comic.thumb} alt={comic.series} />
                             </div>
-
-                            {/* Titolo sotto */}
-                            <p
-                                className="text-uppercase mt-2 mb-0"
-                                style={{
-                                    fontSize: "0.75rem",
-                                    minHeight: "32px",
-                                    color: "#fff",
-                                }}
-                            >
-                                {comic.title}
-                            </p>
+                            <p className="comic-title">{comic.series}</p>
                         </div>
                     ))}
                 </div>
-                {/* --- Bottone --- */}
+
                 <div className="text-center mt-5">
                     <button className="btn btn-primary text-uppercase fw-bold px-4">
                         Load More
                     </button>
                 </div>
-            </div>
+            </section>
         </main>
     );
 }
