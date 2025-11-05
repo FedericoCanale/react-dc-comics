@@ -1,127 +1,43 @@
-@import url("bootstrap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
   --dc-blue: #0282F9;
+  --dc-dark: #1C1C1C;
 }
 
-/* margine generale per tutta la pagina */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
 }
 
-/* link del menu */
+
+
+.dc-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
 .nav-link {
   padding: 1.5rem 0;
   border-bottom: 4px solid transparent;
-  color: #1b1b1b;
-  transition: all 0.2s ease;
+  color: #1b1b1b !important;
+  transition: all .2s ease;
 }
 
-/* hover blu + underline */
 .nav-link:hover {
-  color: var(--dc-blue);
+  color: var(--dc-blue) !important;
   border-bottom-color: var(--dc-blue);
   cursor: pointer;
-}
-
-.blue-bar {
-  background-color: #0282F9;
-}
-
-.blue-bar img {
-  height: 50px;
-  object-fit: contain;
-}
-
-.footer-links a:hover {
-  color: #fff !important;
-}
-
-.footer-bar {
-  background-color: #303030;
-}
-
-/* IMMAGINI SOCIAL */
-.social-icon {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  transition: all 0.3s ease;
-  filter: grayscale(100%);
-  /* effetto iniziale più neutro */
-}
-
-/* EFFETTO HOVER BLU */
-.social-icon:hover {
-  filter: grayscale(0%) brightness(1.2) saturate(1.5) drop-shadow(0 0 6px #0282F9);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-/* BOTTONE */
-.btn-outline-primary {
-  color: #fff;
-  border-color: #0282F9;
-}
-
-.btn-outline-primary:hover {
-  background-color: #0282F9;
-  border-color: #0282F9;
-  color: #fff;
-}
-
-.footer-links {
-  color: #fff;
-  padding: 40px 0;
-  position: relative;
-  background-image: url("./assets/img/footer-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-
-.footer-links .col-12 {
-  margin-bottom: 20px;
-}
-
-
-.footer-col-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-}
-
-
-.footer-link {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  font-size: 0.8rem;
-  display: inline-block;
-}
-
-.footer-link:hover {
-  color: #ffffff;
-}
-
-
-.footer-links li {
-  line-height: 1.2;
-  margin-bottom: 4px;
-}
-
-
-.footer-links .footer-bg-logo {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 550px;
-  opacity: 0.25;
-  transform: translate(40%, -50%);
-  pointer-events: none;
 }

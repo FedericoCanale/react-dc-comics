@@ -2,7 +2,6 @@ import bgImage from "../assets/img/footer-bg.jpg";
 import logoBg from "../assets/img/dc-logo-bg.png";
 
 export default function FooterLinks() {
-  // === Dati dinamici (con slot link vuoto) ===
   const dcComics = [
     { label: "Characters", link: "" },
     { label: "Comics", link: "" },
