@@ -1,4 +1,3 @@
-import bgImage from "../assets/img/footer-bg.jpg";
 import logoBg from "../assets/img/dc-logo-bg.png";
 
 export default function FooterLinks() {
@@ -40,23 +39,15 @@ export default function FooterLinks() {
   ];
 
   return (
-    <section
-      className="footer-links text-white py-5 position-relative"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        overflow: "hidden",
-      }}
-    >
+    <section className="footer-links position-relative">
       <div className="container-fluid px-5 position-relative">
         <div className="row g-2">
-          {/* --- Colonna 1: DC Comics + Shop --- */}
+          {/* Colonna 1: DC Comics + Shop */}
           <div className="col-12 col-md-3">
             <h5 className="footer-col-title">DC Comics</h5>
             <ul className="list-unstyled small mb-3">
               {dcComics.map((item, i) => (
-                <li key={i} className="mb-1">
+                <li key={i}>
                   <a href={item.link} className="footer-link">
                     {item.label}
                   </a>
@@ -67,7 +58,7 @@ export default function FooterLinks() {
             <h5 className="footer-col-title">Shop</h5>
             <ul className="list-unstyled small mb-3">
               {shop.map((item, i) => (
-                <li key={i} className="mb-1">
+                <li key={i}>
                   <a href={item.link} className="footer-link">
                     {item.label}
                   </a>
@@ -76,12 +67,12 @@ export default function FooterLinks() {
             </ul>
           </div>
 
-          {/* --- Colonna 2: DC --- */}
+          {/* Colonna 2: DC */}
           <div className="col-12 col-md-3">
             <h5 className="footer-col-title">DC</h5>
             <ul className="list-unstyled small mb-3">
               {dc.map((item, i) => (
-                <li key={i} className="mb-1">
+                <li key={i}>
                   <a href={item.link} className="footer-link">
                     {item.label}
                   </a>
@@ -90,12 +81,12 @@ export default function FooterLinks() {
             </ul>
           </div>
 
-          {/* --- Colonna 3: Sites --- */}
+          {/* Colonna 3: Sites */}
           <div className="col-12 col-md-3">
             <h5 className="footer-col-title">Sites</h5>
             <ul className="list-unstyled small mb-3">
               {sites.map((item, i) => (
-                <li key={i} className="mb-1">
+                <li key={i}>
                   <a href={item.link} className="footer-link">
                     {item.label}
                   </a>
@@ -105,18 +96,8 @@ export default function FooterLinks() {
           </div>
         </div>
 
-        {/* --- Logo grande a destra --- */}
-        <img
-          src={logoBg}
-          alt="DC Logo"
-          className="position-absolute top-50 end-0 translate-middle-y"
-          style={{
-            width: "550px",
-            opacity: 0.25,
-            transform: "translate(40%, -50%)",
-            pointerEvents: "none",
-          }}
-        />
+        {/* Logo grande a destra */}
+        <img src={logoBg} alt="DC Logo" className="footer-bg-logo" />
       </div>
     </section>
   );
