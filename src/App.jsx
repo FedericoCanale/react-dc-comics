@@ -13,10 +13,8 @@ export default function App() {
       <BlueBar />
       <FooterLinks />
       <Footer />
-
     </>
   );
 }
-
 
 

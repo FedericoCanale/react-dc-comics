@@ -168,7 +168,24 @@ export default function Main() {
                     height: "400px",
                 }}
             />
-
+            {/* --- BOX CURRENT SERIES (sovrapposto al jumbotron) --- */}
+            <div
+                style={{
+                    position: "absolute",
+                    top: "480px", // 🔹 sale sopra la griglia, quasi attaccato al jumbotron
+                    left: "15%",
+                    transform: "translateX(-50%)",
+                    backgroundColor: "#0282F9",
+                    color: "#fff",
+                    textTransform: "uppercase",
+                    fontWeight: "bold",
+                    padding: "10px 25px",
+                    fontSize: "1.2rem",
+                    zIndex: 2,
+                }}
+            >
+                Current Series
+            </div>
             {/* --- SEZIONE COMICS --- */}
             <div className="container py-5" style={{ maxWidth: "1200px" }}>
 
@@ -211,6 +228,12 @@ export default function Main() {
                             </p>
                         </div>
                     ))}
+                </div>
+                {/* --- Bottone --- */}
+                <div className="text-center mt-5">
+                    <button className="btn btn-primary text-uppercase fw-bold px-4">
+                        Load More
+                    </button>
                 </div>
             </div>
         </main>
