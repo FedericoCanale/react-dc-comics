@@ -8,25 +8,25 @@ export default function BlueBar() {
     return (
         <section className="blue-bar py-4">
             <div className="container">
-                <div className="row justify-content-center align-items-center text-white text-uppercase fw-semibold text-center g-4">
-                    <div className="col-6 col-md d-flex align-items-center justify-content-center gap-2">
-                        <img src={digital} alt="Digital Comics" style={{ width: 50 }} />
+                <div className="row g-4 justify-content-center">
+                    <div className="col-6 col-md bb-item">
+                        <img src={digital} alt="Digital Comics" className="bb-icon" />
                         <span>Digital Comics</span>
                     </div>
-                    <div className="col-6 col-md d-flex align-items-center justify-content-center gap-2">
-                        <img src={merch} alt="DC Merchandise" style={{ width: 50 }} />
+                    <div className="col-6 col-md bb-item">
+                        <img src={merch} alt="DC Merchandise" className="bb-icon" />
                         <span>DC Merchandise</span>
                     </div>
-                    <div className="col-6 col-md d-flex align-items-center justify-content-center gap-2">
-                        <img src={subs} alt="Subscription" style={{ width: 50 }} />
+                    <div className="col-6 col-md bb-item">
+                        <img src={subs} alt="Subscription" className="bb-icon" />
                         <span>Subscription</span>
                     </div>
-                    <div className="col-6 col-md d-flex align-items-center justify-content-center gap-2">
-                        <img src={locator} alt="Shop Locator" style={{ width: 50 }} />
+                    <div className="col-6 col-md bb-item">
+                        <img src={locator} alt="Shop Locator" className="bb-icon" />
                         <span>Shop Locator</span>
                     </div>
-                    <div className="col-6 col-md d-flex align-items-center justify-content-center gap-2">
-                        <img src={visa} alt="Power Visa" style={{ width: 50 }} />
+                    <div className="col-6 col-md bb-item">
+                        <img src={visa} alt="Power Visa" className="bb-icon" />
                         <span>Power Visa</span>
                     </div>
                 </div>
