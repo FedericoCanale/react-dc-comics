@@ -153,8 +153,7 @@ const comics = [
     },
 ];
 
-
-
+import ComicCard from "./ComicCard.jsx";
 
 export default function Main() {
     return (
@@ -170,10 +169,7 @@ export default function Main() {
                 <div className="row g-4">
                     {comics.map((comic) => (
                         <div className="col-6 col-md-4 col-lg-2" key={comic.id}>
-                            <div className="comic-thumb">
-                                <img src={comic.thumb} alt={comic.series} />
-                            </div>
-                            <p className="comic-title">{comic.series}</p>
+                            <ComicCard comic={comic} />
                         </div>
                     ))}
                 </div>
